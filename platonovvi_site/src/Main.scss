@@ -7,26 +7,29 @@
   background-color: #3c4d4b75;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   font-size: 15px;
   color: white;
   padding: .5rem;
-
 }
 
 .three-block-string {
-  flex: 0 1 33.33333%;
+  flex: 0 1 33.333%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
-
 .two-block-string {
   flex: 0 1 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .item {
   margin: .5rem;
   background-color: #282c34;
   padding: .5rem;
-
+  flex: 1 0 auto;
 
   .image {
     padding: 0px 0px 58% 0px;
@@ -41,6 +44,10 @@
       top: 0;
       left: 0;
     }
+  }
+
+  .p {
+    height: auto;
   }
 
   -moz-transition: all .2s ease-out;
@@ -58,6 +65,7 @@
   img {
     display: block;
     max-width: 100%;
+    min-height: calc(100vw * (9 / 16));
     background: white;
   }
 

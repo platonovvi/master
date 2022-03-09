@@ -22,8 +22,8 @@ export default class App extends React.Component {
         return (
             <div className={"App" + (this.state.isOpenBurger ? " scroll-block" : "")}>
                 <Navbar openPage={this.openPage} openMenu={this.openMenu}></Navbar>
-                {this.state.isOpenBurger && <BurgerMenu></BurgerMenu>}
-                {this.state.isOpen === 'main' && <Main></Main>} // должен быть отдельно от бургера
+                {this.state.isOpenBurger && <BurgerMenu openPage={this.openPage}></BurgerMenu>}
+                {this.state.isOpen === 'main' && <Main></Main>} {/*должен быть отдельно от бургера*/}
             </div>
         );
     }
