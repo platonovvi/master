@@ -4,7 +4,7 @@ import './Other.scss';
 export default class Restaurant extends React.Component {
     render() {
         return (
-            <div className='App-main'>
+            <div className='other'>
                 Рестораны
             </div>
         );
