@@ -5,7 +5,7 @@ import './Navbar.scss';
 export default class Navbar extends React.Component {
     render() {
         return (
-            <header className="Navbar">
+            <div className="Navbar">
                 <img src={logo} className='Navbar-logo' alt={logo}/>
                 <div className='MenuNavbar'>
                     <div className='ItemMenu' onClick={() => this.props.openPage('main')}>Главная</div>
@@ -17,7 +17,7 @@ export default class Navbar extends React.Component {
                 <div className='MenuBurger' onClick={() => this.props.openMenu()}>
                     <i className="fa fa-solid fa-bars fa-lg"></i>
                 </div>
-            </header>
+            </div>
         );
     }
 }

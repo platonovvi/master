@@ -11,8 +11,8 @@ import './Main.scss';
 export default class Main extends React.Component {
     render() {
         return (
-            <div>
-                <div className="App-main-image">
+            <div className='App-main'>
+                <div className='App-main-image'>
                     <img src={mainImage}/>
                 </div>
                 <div className='App-body'>

@@ -12,8 +12,9 @@
 .Navbar {
   display: flex;
   background-color: #282c34;
+  width: calc(100% - 48px);
   height: 75px;
-  position: sticky;
+  position: fixed;
   top: 0px;
   box-shadow: 0px 5px 5px rgba(60, 77, 75, 0.58);
   align-items: center;
