@@ -1,0 +1,26 @@
+.Menu {
+  display: flex;
+  background-color: #282c34;
+  height: 100%;
+  position: sticky;
+  top: 75px;
+  box-shadow: 0px 5px 5px rgba(60, 77, 75, 0.58);
+  font-size: 1rem;
+  color: white;
+  z-index: 90;
+
+  .MenuFlex {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+
+    .ItemMenu {
+      cursor: pointer;
+      padding: 1.5rem ;
+      width: 100vw;
+    }
+  }
+}
+
+
+

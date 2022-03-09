@@ -1,0 +1,67 @@
+.Navbar-logo {
+  height: 60%;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Navbar-logo {
+    animation: Navbar-logo-spin infinite 20s linear;
+  }
+}
+
+.Navbar {
+  display: flex;
+  background-color: #282c34;
+  height: 75px;
+  position: sticky;
+  top: 0px;
+  box-shadow: 0px 5px 5px rgba(60, 77, 75, 0.58);
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  color: white;
+  z-index: 100;
+  padding: 0px 1.5rem;
+
+  .MenuNavbar {
+    display: flex;
+    justify-content: flex-end;
+    @media (max-width: 767px) {
+      display: none;
+    }
+
+    .ItemMenu {
+      cursor: pointer;
+      padding: 2rem;
+
+      -moz-transition: all .2s ease-out;
+      -o-transition: all .2s ease-out;
+      -webkit-transition: all .2s ease-out;
+
+      &:hover {
+        -webkit-transform: scale(1.15);
+        -moz-transform: scale(1.15);
+        -o-transform: scale(1.15);
+      }
+    }
+  }
+
+  .MenuBurger {
+    display: none;
+    cursor: pointer;
+    @media (max-width: 767px) {
+      display: flex;
+    }
+  }
+}
+
+
+@keyframes Navbar-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
